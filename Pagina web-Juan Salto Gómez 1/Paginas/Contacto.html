@@ -1,0 +1,81 @@
+
+<html>
+
+<head>
+    <meta name="author" content="Juan Salto">
+    <meta name="descripción" content="Práctica de formulario">
+	
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1 align="center">FORMULARIO</h1>
+
+    <table align="center" bordercolor="red" border="3" cellpadding="25">
+        <tr>
+            <td bgcolor="#32F7DC">
+                <h2>Introduzca sus datos</h2>
+
+                <form action="" method="post" enctype="text/plain">
+                    <!--Cajas de texto -->
+                    <fieldset>
+                        <legend> Datos personales</legend>
+
+                        <p> Nombre: <input type="text" name="nombre" value=""></p>
+                        <p> Direccion: <input type="text" name="Caja de texto" maxlength="" value="" title="Direcci?n"></p>
+                        <p> Poblacion: <input type="text" name="Caja de texto" maxlength="" value="" title="Poblaci?n"></p>
+                        <p> Telefono: <input type="tel" name="telefono"/></p>
+                        <p> Fecha de nacimiento: <input type="date" name="nacimiento" value=""></p>
+                        <p> Introduzca el numero que mas le guste <input type="number" name="numero" /></p>
+			<p> Indique la pagina que mas le ha gustado:
+                            <input list="Pagina favorita">
+                            <datalist id="Pagina favorita">
+                                <option value="Escuderias y Pilotos">
+                                <option value="Hsitoria">
+                                <option value="Circuitos">
+				<option value="Futuro">
+                            </datalist>
+                        </p>
+			<p> Indique la calificacion personal que le da a esta pagina web:
+                            <input list="Calificacion">
+                            <datalist id="Calificacion">
+                                <option value="5-Excelente">
+                                <option value="4-Bien">
+                                <option value="3-Regular">
+				<option value="2-Mal">
+				<option value="1-Fatal">
+                            </datalist>
+                        </p>
+
+                        <!--Botones de opciones para indicar que todas las opciones son de un mismo grupo poner el mismo nombre a todas-->
+                        <p><b>Seleccione sexo:</b>
+                            <input type="radio" name="sexo" value="Femenino">Femenino
+                            <input type="radio" name="sexo" value="Masculino">Masculino
+                        </p>
+
+                        <p>Escoja el color que mas le guste <input type="color" name="color" /></p>
+                    </fieldset>
+                    <hr>
+
+
+                    <!--BOTONES-->
+                    <!--Botón de envío-->
+                    <p><input type="submit" value="Enviar datos" name="envio"></p>
+
+                    <!--Botón de borrado-->
+                    <input type="reset" value="Limpiar datos" name="borrado">
+
+		    <!--Botón de pagina principal-->
+                    <input type="button" value="Pagina Principal" onclick="window.open('../index.html');">
+
+                    <!--Botón genérico con código en Javascript mediante evento:onclick-->
+
+                    <input type="button" value="Siguiente formulario" onclick="window.open('formulario2.html');">
+
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
